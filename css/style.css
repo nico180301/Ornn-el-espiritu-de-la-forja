@@ -116,6 +116,46 @@ background-color: #160101;
     align-self: center;
 }
 
+/*HABILIDADES*/
+.contenedor{
+    height: 100vh;
+    width: 100vh;
+}
+.habilidad_p{
+    background-color: black;
+}
+
+.habilidad_q{
+    background-color: black;
+}
+
+.habilidad_w{
+    background-color: black;
+}
+
+.habilidad_e{
+    background-color: black;
+}
+
+.habilidad_r{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*FOOTER*/
@@ -195,7 +235,7 @@ background-color: #160101;
     align-items: center;
 }
 .footer_diseñador{
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Staatliches', cursive;
     font-size: 1rem;
     color: white;
 }
