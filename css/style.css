@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HERO*/
+hr{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    border: 0;
+    border-top: 1px solid white;
+    opacity: 50%;
+}
+
+.hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.603)), url(../assets/aspectos/Ornn-base.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50em;
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}    
+/*Titulo de fondo*/
+.contenidoUno_titulo{
+    padding-top: 15rem;
+    font-family: 'Staatliches', cursive;
+    font-style: italic;
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    align-self: center;
+    color: #fff;
+}
+/*Subrayado de fondo*/
+.contenidoUno_subrayado{
+    width: 70%;
+    height: 1px;
+    background-color: #fff;
+
+}
+/*Subtitulo de fondo*/
+.contenidoUno_subtitulo{
+    font-family: 'Manjari', sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 0.3em;
+    align-self: center;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+/*MAIN*/
+.body{
+background-color: #160101;
+}
+.contenidoDos{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "texto video";
+    padding: 2.5rem;
+    align-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.contenidoDos_texto{
+    grid-area: texto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+/*TITULO CONTENIDODOS*/
+.contenidoDos_titulo{
+    font-family: 'Staatliches', cursive;
+    font-size: 2.5rem;
+    padding-left: 1.875rem;
+}
+
+/*PARRAFO SUBTITULO*/
+.contenidoDos_parrafo{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1.2rem
+}
+
+/*Contenido Video*/
+.contenidoDos_Video{
+    grid-area: video;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+/*FOOTER*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "contenido img redes"
+        "creador creador creador";
+    height: auto;
+    background-color: black;
+    padding: 10px;
+}
+
+/*FOOTER TEXTO*/
+.footer_contenido{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+}
+
+.footer_parrafo{
+    font-family: 'Staatliches', cursive;
+    font-size: 1.3rem;
+    color: white;
+    align-self: center;
+}
+
+.footer_hrContenido{
+    width: 70%;
+    height: 1px;
+    background-color: white;
+    opacity: 100%;
+}
+
+
+/*FOOTER IMAGEN*/
+.footer_img{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_imagen{
+    align-self: center;
+    width: 10rem;
+}
+
+
+/*FOOTER LINK AL JUEGO*/
+.footer_juego{
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+    font-size: 2rem;
+    align-self: center;
+    color: white;
+}
+
+/*FOOTER FINAL*/
+
+.footer_creador{
+    grid-area: creador;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_diseñador{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+.span_footer{
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:768px){
+
+    .contenidoDos{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    .footer{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        padding: px;
+    }
+    .footer_creador{
+        padding: 0 50px 0 50px;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width:480px){
+    .footer{
+        width: 100%;
+    }
+}
