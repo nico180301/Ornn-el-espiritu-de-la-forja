@@ -117,37 +117,95 @@ background-color: #160101;
 }
 
 /*HABILIDADES*/
-.contenedor{
-    height: 100vh;
-    width: 100vw;
+.tituloprincipal{
+    font-size: 80px;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 100px 10px 10px 10px;
+    
+}
+
+
+.habilidad{
+    border: 1px solid #d5a40265;
+    background-color: black;
+    line-height: 70px;
+    margin: 10px;
+    padding: 10px;
+    
+    
+    /*tamaño de las cajas para las imagenes
+    border: 1px solid rgba(213, 164, 2, 0.398);
+    background-color: black;
+    width: 75px;
+    height: 75px;
+    line-height: 70px;
+    text-align: center;
+    margin: 5px;
+    */
+}
+
+.imagen{
+    width: 80px;
+    height: 80px;
+    border: 2px solid #d5a40265;
+}
+.texto{
+    color: white;
+    text-align: start;
+    padding: 0px 50px 0px 50px;
+}
+.entretitulo{
+    font-family: 'Staatliches', cursive;
+}
+.subrayado{
+    opacity: 40%;
+    width: 20%;
+    height: 5px;
+    margin: 0;
+    
+}
+.titulo{
+    font-family: 'Staatliches', cursive;
+}
+.parrafo{
+    font-family: 'Manjari', sans-serif;
+    font-size: 1rem;
+}
+
+.p{
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    
-    
 }
 
 
-
-.habilidad_p{
-    background-color: black;
+.q{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.habilidad_q{
-    background-color: black;
+.w{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.habilidad_w{
-    background-color: black;
+.e{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.habilidad_e{
-    background-color: black;
-}
-
-.habilidad_r{
-    background-color: black;
+.r{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
@@ -168,7 +226,7 @@ background-color: #160101;
 
 
 /*FOOTER*/
-.footer{
+.footer_flex{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -179,6 +237,7 @@ background-color: #160101;
     background-color: black;
     padding: 10px;
 }
+
 
 /*FOOTER TEXTO*/
 .footer_contenido{
@@ -237,6 +296,7 @@ background-color: #160101;
 /*FOOTER FINAL*/
 
 .footer_creador{
+    width: 100%;
     grid-area: creador;
     background-color: black;
     display: flex;
@@ -259,6 +319,39 @@ background-color: #160101;
         display: flex;
         flex-direction: column;
     }
+    .habilidad{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .footer{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        padding: px;
+    }
+
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_creador{
+        padding: 0 50px 0 50px;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_diseñador{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width:768px){
@@ -270,7 +363,18 @@ background-color: #160101;
         flex-direction: column;
     }
 
+    .maingrid{
+    
+    
+    }
 
+    .habilidad{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
 
 
     .footer{
@@ -280,6 +384,12 @@ background-color: #160101;
         grid-gap: 1%;
         padding: px;
     }
+
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
     .footer_creador{
         padding: 0 50px 0 50px;
         font-size: 0.6rem;
@@ -314,12 +424,24 @@ background-color: #160101;
         
     }
 
+    .habilidad{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     .footer{
         width: 100vh;
         height: 100%;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 1%;
         padding: px;
+    }
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
     }
 
     .footer_contenido{

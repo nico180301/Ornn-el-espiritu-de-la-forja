@@ -57,43 +57,106 @@
     
 
     <main class="body">
-        <div class="contenedor">
-            <div class="habilidad_p">
-                <img src="../assets/habilidades/OrnnP.png" alt="pasiva de ornn">
+        
+        <div class="maingrid">
+            <div class="texto titulo">
+                <h1 class="tituloprincipal">HABILIDADES</h1>
             </div>
-            <div class="habilidad_q">
-                <img src="../assets/habilidades/OrnnQ.png" alt="q de ornn">
-            </div>
-            <div class="habilidad_w">
-                <img src="../assets/habilidades/OrnnW.png" alt="w de ornn">
-            </div>
-            <div class="habilidad_e">
-                <img src="../assets/habilidades/OrnnE.png" alt="e de ornn">
-            </div>
-            <div class="habilidad_r">
-                <img src="../assets/habilidades/OrnnR.png" alt="r de ornn">
-            </div>
+                <div class="habilidad p">
+                    <img src="../assets/habilidades/OrnnP.png" alt="pasiva de ornn" class="imagen">
+                    <div class="texto">
+                        <h6 class="texto entretitulo"> Pasiva </h6>
+                        <hr class="texto subrayado">
+                        <h5 class="texto titulo">FORJA VIVIENTE</h5>
+                        <p class="texto parrafo">
+                            Ornn obtiene armadura y resistencia mágica adicionales de todas las fuentes. Ornn puede gastar oro para forjar objetos no consumibles en cualquier lugar. Además, puede crear objetos maestros para él y para sus aliados.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="../videos/pasivadeornn.webm" width="300" height="300" muted controls class="video"></video>
+                    </div>
+                </div>
+                <div class="habilidad q">
+                    <img src="../assets/habilidades/OrnnQ.png" alt="q de ornn" class="imagen">
+                    <div class="texto">
+                        <h6 class="texto entretitulo">Q</h6>
+                        <hr class="texto subrayado">
+                        <h5 class="texto titulo">RUPTURA VOLCÁNICA</h5>
+                        <p class="texto parrafo">
+                            Ornn golpea el suelo, lo que crea una fisura que inflige daño y ralentiza a los enemigos alcanzados. Tras una pequeña demora, una columna de magma se forma en la ubicación del objetivo.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="../videos/qdeornn.webm" width="300" height="300" muted controls class="video"></video>
+                    </div>
+                </div>
+                <div class="habilidad w">
+                    <img src="../assets/habilidades/OrnnW.png" alt="w de ornn" class="imagen">
+                    <div class="texto">
+                        <h6 class="texto entretitulo">W</h6>
+                        <hr class="texto subrayado">
+                        <h5 class="texto titulo">RUGIDO DE FUEGO</h5>
+                        <p class="texto parrafo">
+                            Ornn avanza lanzando fuego por la boca. Los enemigos que reciban el impacto de la última llama se vuelven Frágiles.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="../videos/wdeornn.webm" width="300" height="300" muted controls class="video"></video>
+                    </div>
+                </div>
+                <div class="habilidad e">
+                    <img src="../assets/habilidades/OrnnE.png" alt="e de ornn" class="imagen">
+                    <div class="texto">
+                        <h6 class="texto entretitulo">E</h6>
+                        <hr class="texto subrayado">
+                        <h5 class="texto titulo">EMBESTIDA ABRASADORA</h5>
+                        <p class="texto parrafo">
+                            Ornn embiste, lo que inflige daño a los enemigos que atraviesa. Si Ornn colisiona con terreno mientras embiste, el impacto crea una onda expansiva a su alrededor que inflige daño y levanta a los enemigos.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="../videos/edeornn.webm" width="300" height="300" muted controls class="video"></video>
+                    </div>
+                </div>
+                <div class="habilidad r">
+                    <img src="../assets/habilidades/OrnnR.png" alt="r de ornn" class="imagen">
+                    <div class="texto">
+                        <h6 class="texto entretitulo">R</h6>
+                        <hr class="texto subrayado">
+                        <h5 class="texto titulo">
+                            LLAMADO DEL DIOS DE LA FORJA
+                        </h5>
+                        <p class="texto parrafo">
+                            Ornn invoca un enorme elemental en una ubicación, el cual avanza hacia él a una velocidad que aumenta. Los enemigos atropellados por el elemental reciben daño, quedan ralentizados y se vuelven Frágiles. Ornn puede volver a lanzar la habilidad para embestir al elemental, lo que hará que cambie de dirección y avanzará hacia donde haya recibido el golpe. Esto causará que todos los enemigos que atropelle sean levantados, reciban el mismo daño y vuelvan a recibir el efecto de Fragilidad.
+                        </p>
+                    </div>
+                    <div>
+                        <video src="../videos/rdeornn.webm" width="300" height="300" muted controls class="video"></video>
+                    </div>
+                </div>
         </div>
+        
     </main>
 
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <section class="footer_contenido">
+    <footer class="footer"> 
+        <div class="footer_flex">
+            <section class="footer_juego">
+                <a href="https://www.leagueoflegends.com/es-mx/" target="_blank" class="footer_juego"> Podes jugarlo en <img src="../assets/enlacealjuego.png" alt="logo del juego" class="footer_imagen"></a>
+                
+            </section>
+
+            <section class="footer_img">
+                <img src="../assets/Ornn_Render.webp" alt="ornn forjando" class="footer_imagen">
+            </section>
+            
+            <section class="footer_contenido">
             <p class="footer_parrafo">
             Web creada por un jugador sin fines de lucro.
             </p>
             <hr class="footer_hrContenido">
             <img src="../assets/rammusok.jpg" alt="rammus ok" class="footer_imagen ">
-        </section>
-
-        <section class="footer_img">
-            <img src="../assets/Ornn_Render.webp" alt="ornn forjando" class="footer_imagen">
-        </section>
-
-        <section class="footer_juego">
-            <a href="https://www.leagueoflegends.com/es-mx/" target="_blank" class="footer_juego"> Podes jugarlo en <img src="../assets/enlacealjuego.png" alt="logo del juego" class="footer_imagen"></a>
-            
         </section>
 
         <section class="footer_creador">
@@ -105,6 +168,7 @@
                 Todos los Derechos Reservados. &copy; 2023
             </small>
         </section>
+        </div>
     </footer>
 
 
