@@ -1,0 +1,184 @@
+@media only screen and (max-width:900px){
+    /*INDEX*/
+    .contenidoDos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA HABILIDADES*/
+    .habilidad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    /*PAGINA ASPECTOS*/
+
+
+    /*FOOTER*/
+    .footer{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        padding: px;
+    }
+
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_creador{
+        padding: 0 50px 0 50px;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_diseñador{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+
+    /*INDEX*/
+    .contenidoDos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA HABILIDADES*/
+    .habilidad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    /*PAGINA ASPECTOS*/
+
+    /*FOOTER*/
+    .footer{
+        width: 100%;
+        height: auto;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        padding: px;
+    }
+
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer_creador{
+        padding: 0 50px 0 50px;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_diseñador{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    /*INDEX*/
+    .nav-bar{
+        width: 50%;
+        text-align: right;
+    }
+    .hero{
+        width: 100vh;
+        
+    }
+
+
+
+    .body{
+        width: 100vh;
+    }
+    .contenidoDos{
+        width: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    /*PAGINA HABILIDADES*/
+    .habilidad{
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+
+    /*PAGINA ASPECTOS*/
+    
+    
+    .aspe{
+        width: 100vh;
+    }
+    .aspecto{
+        width: 100vh;
+    }
+    .a1{
+        width: 100%;
+    }
+    .a2{
+        width: 100%;
+    }
+    .a3{
+        width: 100%;
+    }
+    .a4{
+        width: 100%;
+    }
+
+    
+
+    /*FOOTER*/
+    .footer{
+        width: 100vh;
+        height: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 1%;
+        padding: px;
+    }
+    .footer_flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_contenido{
+        grid-area: contenido;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.6rem;
+    }
+
+    .footer_creador{
+        padding: 0 50px 0 50px;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_diseñador{
+        display: flex;
+        flex-direction: column;
+    }
+}

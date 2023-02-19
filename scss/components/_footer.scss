@@ -1,0 +1,96 @@
+/*FOOTER*/
+
+.footer{
+
+    .footer_flex{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "contenido img redes"
+            "creador creador creador";
+        height: auto;
+        background-color: $color-main;
+        padding: 10px;
+
+        /*FOOTER LINK AL JUEGO*/
+        .footer_juego{
+        grid-area: redes;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.6rem;
+
+        font-family: $font-second;
+        text-decoration: none;
+        font-size: 2rem;
+        align-self: center;
+        color: $color-second;
+        }
+
+        /*FOOTER IMAGEN*/
+        .footer_img{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        .footer_imagen{
+        align-self: center;
+        width: 10rem;
+        }
+
+            /*FOOTER TEXTO*/
+            .footer_contenido{
+        grid-area: contenido;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.6rem;
+        .footer_parrafo{
+            font-family: $font-second;
+            font-size: 1.3rem;
+            color: $color-second;
+            align-self: center;
+        }
+        .footer_hrContenido{
+            width: 70%;
+            height: 1px;
+            background-color: $color-second;
+            opacity: 100%;
+        }
+        }
+
+
+        /*FOOTER FINAL*/
+
+        .footer_creador{
+    width: 100%;
+    grid-area: creador;
+    background-color: $color-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .footer_diseñador{
+        font-family: $font-second;
+        font-size: 1rem;
+        color: $color-second;
+
+        .span_footer{
+            font-size: 1.5rem;
+        }
+    }
+    
+    }
+}
+
+
+
+}
+
+
+
+

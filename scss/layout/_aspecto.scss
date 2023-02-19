@@ -1,0 +1,79 @@
+/*PAGINA ASPECTOS*/
+
+.aspe_titulo{
+    font-family: $font-second;
+    color: $color-second;
+    font-size: 4.375em;
+    text-align: center;
+    margin: 0;
+    padding-top: 5.625rem;
+    background-color: $color-third;
+}
+
+.aspecto{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: minmax(600px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: auto;
+    background-color: $color-third;
+}
+.aspecto div{
+    transition: 1s;
+}
+
+
+.a1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/aspectos/Ornn-base.jpg);
+    align-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid $color-main;
+    
+    transition: 1s;
+}
+.a2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/aspectos/Ornn-Señor-Del-Trueno.jpg);
+    align-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid $color-main;
+    transition: 1s;
+}
+.a3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/aspectos/Ornn-Bosque-Viejo.jpg);
+    align-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid $color-main;
+    transition: 1s;
+}
+.a4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/aspectos/Ornn-Onda-Espacial.jpg);
+    align-content: center;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid $color-main;
+    transition: 1s;
+}

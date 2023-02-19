@@ -1,0 +1,93 @@
+/* PAGINA HABILIDADES*/
+.tituloprincipal{
+    font-size: 4.375em;
+    text-align: center;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 100px 10px 10px 10px;
+    
+}
+
+
+.habilidad{
+    border: 1px solid $color-fourth;
+    background-color: $color-main;
+    margin: 0 30px 20px;
+    padding: 10px;
+    
+    
+
+}
+
+.imagen{
+    width: 80px;
+    height: 80px;
+    border: 2px solid $color-fourth;
+}
+.video{
+    padding: 5px;
+}
+.texto{
+    color: white;
+    text-align: start;
+    padding: 0 0px 0px 20px;
+}
+.entretitulo{
+    font-family: $font-second;
+    padding: 0;
+    margin: 0;
+}
+.subrayado{
+    opacity: 40%;
+    width: 20%;
+    height: 5px;
+    margin: 0;
+    
+}
+.titulo{
+    font-family: $font-second;
+    padding: 0;
+    margin: 0;
+}
+.parrafo{
+    
+    font-family: $font-main;
+    font-size: 1rem;
+    margin: 0;
+    
+}
+
+.p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.q{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.w{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.e{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.r{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
