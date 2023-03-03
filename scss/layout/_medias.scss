@@ -1,4 +1,4 @@
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1200px){
     /*INDEX*/
     .contenidoDos{
         height: 100%;
@@ -18,36 +18,50 @@
     /*PAGINA ASPECTOS*/
 
 
-    /*FOOTER*/
-    .footer{
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 1%;
-        padding: px;
-    }
-
-    .footer_flex{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer_creador{
-        padding: 0 50px 0 50px;
-        font-size: 0.6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_diseñador{
-        display: flex;
-        flex-direction: column;
-    }
 
 }
+@media only screen and (max-width:900px){
+
+    /*INDEX*/
+    .contenidoDos{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*PAGINA HABILIDADES*/
+    .habilidad{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 10px 0;
+    }
+
+    /*GALERIA ARREGLADO 900PX*/
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .close{
+        top: 70px;
+        right: 15px;
+    }
+
+    /*FOOTER ARREGLADO 900PX*/
+        .pie-pagina .grupo-1{
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            padding: 35px 0px;
+        }
+    }
+
 
 @media only screen and (max-width:768px){
-
+    
     /*INDEX*/
     .contenidoDos{
         height: 100%;
@@ -64,121 +78,107 @@
         margin: 0 0 10px 0;
     }
 
-    /*PAGINA ASPECTOS*/
 
-    /*FOOTER*/
-    .footer{
-        width: 100%;
-        height: auto;
-        grid-template-columns: repeat(1,1fr);
-        grid-gap: 1%;
-        padding: px;
-    }
-
-    .footer_flex{
+    /*GALERIA ARREGLADO 768PX*/
+    .galeria{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    .close{
+        top: 70px;
+        right: 15px;
+    }
+
+    /*FOOTER ARREGLADO 768PX*/
+        .pie-pagina .grupo-1{
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            padding: 35px 0px;
+        }
+    }
+
+    @media screen and (max-width:560px){
+        
+        /*GALERIA ARREGLADO 560PX*/
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
     }
     
-    .footer_creador{
-        padding: 0 50px 0 50px;
-        font-size: 0.6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        
+        /*FOOTER ARREGLADO A 560PX*/
+        .pie-pagina .grupo-1{
+            width: 80%;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            padding: 35px 0px;
+        }
     }
-    .footer_diseñador{
-        display: flex;
-        flex-direction: column;
-    }
-}
+
 
 
 @media screen and (max-width:480px){
 
     /*INDEX*/
-    .nav-bar{
-        width: 50%;
-        text-align: right;
-    }
     .hero{
-        width: 100vh;
-        
+        width: 100%;
     }
-
-
-
     .body{
-        width: 100vh;
+        width: 100%;
     }
     .contenidoDos{
-        width: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        
     }
-
+    .contenidoDos Video{
+        width: 100%;
+    }
     /*PAGINA HABILIDADES*/
     .habilidad{
         width: 100%;
         margin: 0 0 10px 0;
     }
 
-    /*PAGINA ASPECTOS*/
-    
-    
-    .aspe{
-        width: 100vh;
-    }
-    .aspecto{
-        width: 100vh;
-    }
-    .a1{
+    /*GALERIA ARREGLADO 480PX*/
+    .galeria{
+        display: flex;
+        flex-direction: column;
         width: 100%;
-    }
-    .a2{
-        width: 100%;
-    }
-    .a3{
-        width: 100%;
-    }
-    .a4{
-        width: 100%;
+        padding: 10px;
     }
 
-    
-
-    /*FOOTER*/
-    .footer{
-        width: 100vh;
-        height: 100%;
+    /*FOOTER ARREGLADO A 480PX*/
+    .pie-pagina .grupo-1{
+        width: 80%;
         grid-template-columns: repeat(1,1fr);
-        grid-gap: 1%;
-        padding: px;
-    }
-    .footer_flex{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer_contenido{
-        grid-area: contenido;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 1.6rem;
-    }
-
-    .footer_creador{
-        padding: 0 50px 0 50px;
-        font-size: 0.6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .footer_diseñador{
-        display: flex;
-        flex-direction: column;
+        gap: 20px;
+        padding: 35px 0px;
     }
 }
+
+@media screen and (max-width:320px){
+    
+    /*GALERIA ARREGLADO A 320PX*/
+    .galeria{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    
+    /*FOOTER ARREGLADO A 320PX*/
+    .pie-pagina .grupo-1{
+        width: 80%;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        padding: 25px 0px;
+    }
+}
+

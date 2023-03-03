@@ -20,92 +20,130 @@
 </head>
 <body>
     <!-- NAVBAR -->
-    <header>
-        <div class="nav-bar">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="../index.html"> <img src="../assets/favicon/OrnnEmogi.webp" width="60px"
-                            height="60px"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                        aria-labelledby="offcanvasDarkNavbarLabel">
-                        <div class="offcanvas-header" style="background-color: #000;">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ORNN</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body" style="background-color: #000;">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page"
-                                        href="../pages/habilidades.html">HABILIDADES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="../pages/aspectos.html">ASPECTOS</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> <img src="../assets/favicon/OrnnEmogi.webp" width="60px"
+                height="60px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"          
+                data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel" >
+                <div class="offcanvas-header" style="background-color: #000;">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ORNN</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-            </nav>
+                <div class="offcanvas-body" style="background-color: #000;">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../pages/habilidades.html">HABILIDADES</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../pages/aspectos.html">ASPECTOS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <div>
-            <section class="aspe">
-                <h1 class="aspe_titulo">ASPECTOS</h1>
-            </section>
-            <section class="wow animate__ animate__fadeInLeft aspecto animated" style="visibility: visible; animation-name: fadeInLeft;">
-                <div class=" aspecto a1 wide"></div>
-                <div class=" aspecto a2"></div>
-                <div class=" aspecto a3"></div>
-                <div class="aspecto a4"></div>
-            </section>
-        </div>
+    <main class="aspectos">
+        <!--GALERIA DE IMAGENES 2-->
+
+        <section class="aspe">
+            <h1 class="aspe_titulo">ASPECTOS</h1>
+        </section>
+
+        <section class="galeria">
+            <a href="#ornn1" class="ornn">
+                <img src="../assets/aspectos/Ornn-base.jpg" alt="">
+            </a>
+            <a href="#ornn2" class="ornn">
+                <img src="../assets/aspectos/Ornn-Señor-Del-Trueno.jpg" alt="">
+            </a>
+            <a href="#ornn3" class="ornn">
+                <img src="../assets/aspectos/Ornn-Bosque-Viejo.jpg" alt="">
+            </a>
+            <a href="#ornn4" class="ornn">
+                <img src="../assets/aspectos/Ornn-Onda-Espacial.jpg" alt="">
+            </a>
+        </section>
+        <article class="light-box" id="ornn1">
+            <a href="#ornn4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../assets/aspectos/Ornn-base.jpg" alt="">
+            <a href="#ornn2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+    
+        </section>
+        <article class="light-box" id="ornn2">
+            <a href="#ornn1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../assets/aspectos/Ornn-Señor-Del-Trueno.jpg" alt="">
+            <a href="#ornn3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+    
+        </section>
+        <article class="light-box" id="ornn3">
+            <a href="#ornn2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../assets/aspectos/Ornn-Bosque-Viejo.jpg" alt="">
+            <a href="#ornn4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+    
+        </section>
+        <article class="light-box" id="ornn4">
+            <a href="#ornn3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="../assets/aspectos/Ornn-Onda-Espacial.jpg" alt="">
+            <a href="#ornn1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close">X</a>
+        </article>
+    
+        <script src="https://kit.fontawesome.com/f97124db0f.js" crossorigin="anonymous"></script>
+
     </main>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer_flex">
-            <section class="footer_juego">
-                <a href="https://www.leagueoflegends.com/es-mx/" target="_blank" class="footer_juego"> Podes jugarlo en <img src="../assets/enlacealjuego.png" alt="logo del juego" class="footer_imagen"></a>
-                
-            </section>
+    <!---------Footer 2-------------->
+    <footer class="pie-pagina">
 
-            <section class="footer_img">
-                <img src="../assets/Ornn_Render.webp" alt="ornn forjando" class="footer_imagen">
-            </section>
-            
-            <section class="footer_contenido">
-            <p class="footer_parrafo">
-            Web creada por un jugador sin fines de lucro.
-            </p>
-            <hr class="footer_hrContenido">
-            <img src="../assets/rammusok.jpg" alt="rammus ok" class="footer_imagen ">
-        </section>
-
-        
-
-        
-
-        <section class="footer_creador">
-            <small class="footer_diseñador">
-                Web by 
-                <span class="span_footer">
-                    LEONARDO NICOLÁS MALDONADO
-                </span>
-                Todos los Derechos Reservados. &copy; 2023
-            </small>
-        </section>
+        <div class="grupo-1">
+            <div class="box">
+            <h2> Web creada por un jugador sin fines de lucro.</h2>
+            <hr>
+            <figure>
+                <a href="#">
+                    <img src="../assets/rammusok.jpg" alt="Rammus Ok">
+                </a>
+            </figure>
+            </div>
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../assets/Ornn_Render.webp" alt="Ornn forjando">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>PODES JUGARLO EN
+                    <figure>
+                        <a href="https://www.leagueoflegends.com/es-mx/"><img src="../assets/enlacealjuego.png" alt="Logo de League of Legends"></a>
+                    </figure>
+                </h2>
+            </div>
         </div>
-        
+
+        <div class="grupo-2">
+            <div class="">
+                <small> &copy; 2023 Web by <b>LEONARDO NICOLÁS MALDONADO</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </div>
+
     </footer>
 
 
