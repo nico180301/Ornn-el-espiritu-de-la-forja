@@ -8,16 +8,14 @@
     }
 
     /*PAGINA HABILIDADES*/
-    .habilidad{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 10px 0;
+    .habilidades{
+        .habilidad{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+        }
     }
-
-    /*PAGINA ASPECTOS*/
-
-
 
 }
 @media only screen and (max-width:900px){
@@ -31,19 +29,23 @@
     }
 
     /*PAGINA HABILIDADES*/
-    .habilidad{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 10px 0;
+    .habilidades{
+        .habilidad{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+        }
     }
 
     /*GALERIA ARREGLADO 900PX*/
-    .galeria{
+    .aspectos{
+        .galeria{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px;
+        }
     }
     .close{
         top: 70px;
@@ -71,20 +73,24 @@
     }
 
     /*PAGINA HABILIDADES*/
-    .habilidad{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin: 0 0 10px 0;
-    }
+    .habilidades{
+        .habilidad{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+        }
+}
 
 
     /*GALERIA ARREGLADO 768PX*/
-    .galeria{
+    .aspectos{
+        .galeria{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px;
+        }
     }
     .close{
         top: 70px;
@@ -101,13 +107,27 @@
     }
 
     @media screen and (max-width:560px){
-        
+        /*PAGINA HABILIDADES*/
+    .habilidades{
+        /*.habilidad{
+            width: 100%;
+            margin: 0 0 10px 0;
+        }*/
+        .habilidad{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+        }
+    }
         /*GALERIA ARREGLADO 560PX*/
-    .galeria{
+    .aspectos{
+        .galeria{
         display: flex;
         flex-direction: column;
         width: 100%;
         padding: 10px;
+        }
     }
     
         
@@ -140,17 +160,27 @@
         width: 100%;
     }
     /*PAGINA HABILIDADES*/
-    .habilidad{
+    .habilidades{
+        /*.habilidad{
         width: 100%;
         margin: 0 0 10px 0;
+        }*/
+        .habilidad{
+            
+            display: flex;
+            flex-direction: column;
+            margin: 0 0 10px 0;
+        }
     }
 
     /*GALERIA ARREGLADO 480PX*/
-    .galeria{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
+        .aspectos{
+        .galeria{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
     }
 
     /*FOOTER ARREGLADO A 480PX*/
@@ -163,13 +193,53 @@
 }
 
 @media screen and (max-width:320px){
-    
-    /*GALERIA ARREGLADO A 320PX*/
-    .galeria{
+    /*INDEX*/
+    .hero{
+        width: 100%;
+    }
+    .body{
+        width: 100%;
+    }
+    .contenidoDos{
+        width: 100%;
         display: flex;
         flex-direction: column;
+    }
+    .contenidoDos Video{
         width: 100%;
-        padding: 10px;
+    }
+    /*PAGINA HABILIDADES*/
+    .habilidades{
+        /*.habilidad{
+        width: 100%;
+        margin: 0 0 10px 0;}*/
+        /*.habilidad{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }*/
+        .habilidad{
+            display: flex;
+            flex-direction: column;
+            
+            padding: 10px;
+        }
+    }
+
+    
+    
+    
+    /*GALERIA ARREGLADO A 320PX*/
+    
+    .aspectos{
+        .galeria{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
+        }
     }
     
     

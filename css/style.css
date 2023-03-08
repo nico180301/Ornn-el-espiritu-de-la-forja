@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+h1 {
+  color: white; }
+
 /*HERO reset HR*/
 hr {
   margin-block-start: 0.5em;
@@ -16,6 +19,17 @@ hr {
   border: 0;
   border-top: 1px solid white;
   opacity: 50%; }
+
+.habilidad {
+  border: 1px solid #d5a40265;
+  background-color: black;
+  margin: 0 30px 20px;
+  padding: 10px; }
+
+.habilidades .maingrid .habilidad.p, .habilidades .maingrid .habilidad.q, .habilidades .maingrid .habilidad.w, .habilidades .maingrid .habilidad.e, .habilidades .maingrid .habilidad.r {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
 
 /*FOOTER*/
 .pie-pagina {
@@ -146,164 +160,202 @@ hr {
   align-self: center; }
 
 /* PAGINA HABILIDADES*/
-.tituloprincipal {
-  font-size: 4.375em;
-  text-align: center; }
+.habilidades {
+  background-color: #160101; }
+  .habilidades .maingrid {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 100px 10px 10px 10px; }
+    .habilidades .maingrid .textotitulo .tituloprincipal {
+      font-size: 4.375em;
+      text-align: center;
+      font-family: "Staatliches", cursive;
+      font-style: italic; }
+    .habilidades .maingrid .habilidad .imagen {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #d5a40265; }
+    .habilidades .maingrid .habilidad .video {
+      padding: 5px; }
+    .habilidades .maingrid .habilidad .texto {
+      color: white;
+      text-align: start;
+      padding-left: 40px;
+      padding-right: 40px; }
+      .habilidades .maingrid .habilidad .texto__entretitulo {
+        font-family: "Staatliches", cursive;
+        padding: 0;
+        margin: 0; }
+      .habilidades .maingrid .habilidad .texto__subrayado {
+        opacity: 40%;
+        width: 20%;
+        height: 5px;
+        margin: 0; }
+      .habilidades .maingrid .habilidad .texto__titulo {
+        font-family: "Staatliches", cursive;
+        padding: 0;
+        margin: 0; }
+      .habilidades .maingrid .habilidad .texto__parrafo {
+        font-family: "Manjari", sans-serif;
+        font-size: 1rem;
+        margin: 0;
+        padding-left: 20px; }
 
-.maingrid {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 100%;
-  padding: 100px 10px 10px 10px; }
+/*.habilidad{
+    &.p &.q &.w &.e &.r{
+    @extend %cajas;
+    }
+}*/
+/*.maingrid{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding: 100px 10px 10px 10px;
+    
+}
+.tituloprincipal{
+    font-size: 4.375em;
+    text-align: center;
+}*/
+/*.imagen{
+    width: 80px;
+    height: 80px;
+    border: 2px solid $color-fourth;
+}*/
+/*.video{
+    padding: 5px;
+}*/
+/*.texto{
+    color: white;
+    text-align: start;
+    padding: 0 0px 0px 20px;
+}*/
+/*.entretitulo{
+    font-family: $font-second;
+    padding: 0;
+    margin: 0;
+}*/
+/*.subrayado{
+    opacity: 40%;
+    width: 20%;
+    height: 5px;
+    margin: 0;
+}*/
+/*.titulo{
+    font-family: $font-second;
+    padding: 0;
+    margin: 0;
+}*/
+/*.parrafo{
+    font-family: $font-main;
+    font-size: 1rem;
+    margin: 0;
+}*/
+/*.p{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.habilidad {
-  border: 1px solid #d5a40265;
-  background-color: black;
-  margin: 0 30px 20px;
-  padding: 10px; }
 
-.imagen {
-  width: 80px;
-  height: 80px;
-  border: 2px solid #d5a40265; }
+.q{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.video {
-  padding: 5px; }
+.w{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.texto {
-  color: white;
-  text-align: start;
-  padding: 0 0px 0px 20px; }
+.e{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-.entretitulo {
-  font-family: "Staatliches", cursive;
-  padding: 0;
-  margin: 0; }
-
-.subrayado {
-  opacity: 40%;
-  width: 20%;
-  height: 5px;
-  margin: 0; }
-
-.titulo {
-  font-family: "Staatliches", cursive;
-  padding: 0;
-  margin: 0; }
-
-.parrafo {
-  font-family: "Manjari", sans-serif;
-  font-size: 1rem;
-  margin: 0; }
-
-.p {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.q {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.w {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.e {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
-.r {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
-
+.r{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}*/
 /*PAGINA ASPECTOS*/
 /*CCS DE GALERIA DE IMAGENES 2*/
 .aspectos {
   background-color: #160101; }
-
-.aspe_titulo {
-  font-family: "Staatliches", cursive;
-  color: white;
-  font-size: 4.375em;
-  text-align: center;
-  margin: 0;
-  padding-top: 5.625rem; }
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 95%;
-  margin: auto;
-  grid-gap: 10px;
-  padding: 40px 0;
-  overflow: hidden; }
-
-.galeria > .ornn {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
-
-.galeria img {
-  width: 100%;
-  vertical-align: top;
-  height: 300px;
-  object-fit: cover;
-  transition: 0.5s; }
-
-.galeria .ornn:hover img {
-  transform: scale(1.2); }
-
-.light-box {
-  position: fixed;
-  top: 30px;
-  left: 0;
-  background: rgba(0, 0, 0, 0.5);
-  transition: transform .3s ease-in-out;
-  width: 100%;
-  height: 100%;
-  z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0); }
-
-.light-box img {
-  width: 75%;
-  max-height: 80%; }
-
-.light-box:target {
-  transform: scale(1); }
-
-.close {
-  display: block;
-  position: absolute;
-  top: 60px;
-  right: 60px;
-  color: white;
-  background: black;
-  text-decoration: none;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%; }
-
-.next {
-  display: block;
-  background: black;
-  color: white;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-decoration: none;
-  text-align: center;
-  border-radius: 50%; }
+  .aspectos .aspe_titulo {
+    font-family: "Staatliches", cursive;
+    color: white;
+    font-size: 4.375em;
+    text-align: center;
+    margin: 0;
+    padding-top: 6rem;
+    font-style: italic; }
+  .aspectos .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 20px 0;
+    overflow: hidden; }
+    .aspectos .galeria__ornn {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5); }
+    .aspectos .galeria img {
+      width: 100%;
+      vertical-align: top;
+      height: 300px;
+      object-fit: cover;
+      transition: 0.5s; }
+      .aspectos .galeria img:hover {
+        transform: scale(1.2); }
+  .aspectos .light-box {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0); }
+    .aspectos .light-box:target {
+      transform: scale(1); }
+    .aspectos .light-box img {
+      width: 75%;
+      max-height: 80%; }
+    .aspectos .light-box .close {
+      display: block;
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      color: white;
+      background: black;
+      text-decoration: none;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      border-radius: 50%; }
+    .aspectos .light-box .next {
+      display: block;
+      background: black;
+      color: white;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 50%; }
 
 @media only screen and (max-width: 1200px) {
   /*INDEX*/
@@ -313,12 +365,10 @@ hr {
     display: flex;
     flex-direction: column; }
   /*PAGINA HABILIDADES*/
-  .habilidad {
-    width: 100%;
+  .habilidades .habilidad {
     display: flex;
     flex-direction: column;
-    margin: 0 0 10px 0; }
-  /*PAGINA ASPECTOS*/ }
+    margin: 0 0 10px 0; } }
 
 @media only screen and (max-width: 900px) {
   /*INDEX*/
@@ -328,13 +378,12 @@ hr {
     display: flex;
     flex-direction: column; }
   /*PAGINA HABILIDADES*/
-  .habilidad {
-    width: 100%;
+  .habilidades .habilidad {
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0; }
   /*GALERIA ARREGLADO 900PX*/
-  .galeria {
+  .aspectos .galeria {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -357,13 +406,12 @@ hr {
     display: flex;
     flex-direction: column; }
   /*PAGINA HABILIDADES*/
-  .habilidad {
-    width: 100%;
+  .habilidades .habilidad {
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0; }
   /*GALERIA ARREGLADO 768PX*/
-  .galeria {
+  .aspectos .galeria {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -379,8 +427,18 @@ hr {
     padding: 35px 0px; } }
 
 @media screen and (max-width: 560px) {
+  /*PAGINA HABILIDADES*/
+  .habilidades {
+    /*.habilidad{
+            width: 100%;
+            margin: 0 0 10px 0;
+        }*/ }
+    .habilidades .habilidad {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 10px 0; }
   /*GALERIA ARREGLADO 560PX*/
-  .galeria {
+  .aspectos .galeria {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -405,11 +463,17 @@ hr {
   .contenidoDos Video {
     width: 100%; }
   /*PAGINA HABILIDADES*/
-  .habilidad {
-    width: 100%;
-    margin: 0 0 10px 0; }
+  .habilidades {
+    /*.habilidad{
+        width: 100%;
+        margin: 0 0 10px 0;
+        }*/ }
+    .habilidades .habilidad {
+      display: flex;
+      flex-direction: column;
+      margin: 0 0 10px 0; }
   /*GALERIA ARREGLADO 480PX*/
-  .galeria {
+  .aspectos .galeria {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -422,8 +486,35 @@ hr {
     padding: 35px 0px; } }
 
 @media screen and (max-width: 320px) {
+  /*INDEX*/
+  .hero {
+    width: 100%; }
+  .body {
+    width: 100%; }
+  .contenidoDos {
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+  .contenidoDos Video {
+    width: 100%; }
+  /*PAGINA HABILIDADES*/
+  .habilidades {
+    /*.habilidad{
+        width: 100%;
+        margin: 0 0 10px 0;}*/
+    /*.habilidad{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }*/ }
+    .habilidades .habilidad {
+      display: flex;
+      flex-direction: column;
+      padding: 10px; }
   /*GALERIA ARREGLADO A 320PX*/
-  .galeria {
+  .aspectos .galeria {
     display: flex;
     flex-direction: column;
     width: 100%;
