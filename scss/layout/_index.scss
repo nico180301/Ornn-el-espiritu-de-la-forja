@@ -1,5 +1,5 @@
 //HERO INDEX
-.hero{
+.hero {
     background: linear-gradient(rgba(0, 0, 0, 0.623), rgba(0, 0, 0, 0.603)), url(../assets/aspectos/Ornn-base.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,47 +11,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}    
-/*Titulo de fondo*/
-.contenidoUno_titulo{
-    padding-top: 15rem;
-    font-family: $font-second;
-    font-style: italic;
-    font-size: 6rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    align-self: center;
-    color: $color-second;
-}
-/*Subrayado de fondo*/
-.contenidoUno_subrayado{
-    width: 70%;
-    height: 1px;
-    background-color: $color-second;
 
+    /*Titulo de fondo*/
+    .contenidoUno_titulo {
+        padding-top: 15rem;
+        font-family: $font-second;
+        font-style: italic;
+        font-size: 6rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        align-self: center;
+        color: $color-second;
+    }
+
+    /*Subrayado de fondo*/
+    .contenidoUno_subrayado {
+        width: 70%;
+        height: 1px;
+        background-color: $color-second;
+    }
+
+    /*Subtitulo de fondo*/
+    .contenidoUno_subtitulo {
+        font-family: $font-second;
+        font-style: italic;
+        font-size: 1.5rem;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        align-self: center;
+        color: $color-second;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
-/*Subtitulo de fondo*/
-.contenidoUno_subtitulo{
-    font-family: $font-second;
-    font-style: italic;
-    font-size: 1.5rem;
-    line-height: 1;
-    letter-spacing: 0.3em;
-    align-self: center;
-    color: $color-second;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
+
+
 
 /*MAIN INDEX*/
-.body{
+.body {
     background-color: $color-third;
-    }
-    .contenidoDos{
-        
+
+    .contenidoDos {
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
@@ -60,35 +65,39 @@
         align-content: center;
         align-items: center;
         gap: 2%;
+
+        .contenidoDos {
+            &_texto {
+                grid-area: texto;
+                color: $color-second;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                /*TITULO CONTENIDODOS*/
+                .contenidoDos_titulo {
+                    font-family: $font-second;
+                    font-size: 2.5rem;
+                    padding-left: 1.875rem;
+                }
+
+                /*PARRAFO SUBTITULO*/
+                .contenidoDos_parrafo {
+                    font-family: $font-second;
+                    font-size: 1.2rem
+                }
+            }
+        }
+
+        /*Contenido Video*/
+        .contenidoDos_Video {
+            grid-area: video;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+        }
     }
-    
-    .contenidoDos_texto{
-        grid-area: texto;
-        color: $color-second;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    /*TITULO CONTENIDODOS*/
-    .contenidoDos_titulo{
-        font-family: $font-second;
-        font-size: 2.5rem;
-        padding-left: 1.875rem;
-    }
-    
-    /*PARRAFO SUBTITULO*/
-    .contenidoDos_parrafo{
-        font-family: $font-second;
-        font-size: 1.2rem
-    }
-    
-    /*Contenido Video*/
-    .contenidoDos_Video{
-        grid-area: video;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-self: center;
-    }
+}

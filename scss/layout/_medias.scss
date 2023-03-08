@@ -1,16 +1,18 @@
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:1200px) {
+
     /*INDEX*/
-    .contenidoDos{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .body {
+        .contenidoDos {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     /*PAGINA HABILIDADES*/
-    .habilidades{
-        .habilidad{
-            
+    .habilidades {
+        .habilidad {
             display: flex;
             flex-direction: column;
             margin: 0 0 10px 0;
@@ -18,20 +20,22 @@
     }
 
 }
-@media only screen and (max-width:900px){
+
+@media only screen and (max-width:900px) {
 
     /*INDEX*/
-    .contenidoDos{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+    .body {
+        .contenidoDos {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     /*PAGINA HABILIDADES*/
-    .habilidades{
-        .habilidad{
-            
+    .habilidades {
+        .habilidad {
             display: flex;
             flex-direction: column;
             margin: 0 0 10px 0;
@@ -39,134 +43,143 @@
     }
 
     /*GALERIA ARREGLADO 900PX*/
-    .aspectos{
-        .galeria{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
+    .aspectos {
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
         }
     }
-    .close{
+
+    .close {
         top: 70px;
         right: 15px;
     }
 
     /*FOOTER ARREGLADO 900PX*/
-        .pie-pagina .grupo-1{
-            width: 80%;
-            grid-template-columns: repeat(1,1fr);
-            gap: 20px;
-            padding: 35px 0px;
+    .pie-pagina .grupo-1 {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 35px 0px;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+
+    /*INDEX*/
+    .body {
+        .contenidoDos {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
     }
 
-
-@media only screen and (max-width:768px){
-    
-    /*INDEX*/
-    .contenidoDos{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
     /*PAGINA HABILIDADES*/
-    .habilidades{
-        .habilidad{
-            
+    .habilidades {
+        .habilidad {
             display: flex;
             flex-direction: column;
             margin: 0 0 10px 0;
         }
-}
+    }
 
 
     /*GALERIA ARREGLADO 768PX*/
-    .aspectos{
-        .galeria{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
+    .aspectos {
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
         }
     }
-    .close{
+
+    .close {
         top: 70px;
         right: 15px;
     }
 
     /*FOOTER ARREGLADO 768PX*/
-        .pie-pagina .grupo-1{
-            width: 80%;
-            grid-template-columns: repeat(1,1fr);
-            gap: 20px;
-            padding: 35px 0px;
+    .pie-pagina .grupo-1 {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    /*INDEX*/
+    .body {
+        .contenidoDos {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
         }
     }
 
-    @media screen and (max-width:560px){
-        /*PAGINA HABILIDADES*/
-    .habilidades{
-        /*.habilidad{
-            width: 100%;
-            margin: 0 0 10px 0;
-        }*/
-        .habilidad{
-            
+    /*PAGINA HABILIDADES*/
+    .habilidades {
+        .habilidad {
+
             display: flex;
             flex-direction: column;
             margin: 0 0 10px 0;
         }
     }
-        /*GALERIA ARREGLADO 560PX*/
-    .aspectos{
-        .galeria{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
-        }
-    }
-    
-        
-        /*FOOTER ARREGLADO A 560PX*/
-        .pie-pagina .grupo-1{
-            width: 80%;
-            grid-template-columns: repeat(1,1fr);
-            gap: 20px;
-            padding: 35px 0px;
+
+    /*GALERIA ARREGLADO 560PX*/
+    .aspectos {
+        .galeria {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 10px;
         }
     }
 
+    /*FOOTER ARREGLADO A 560PX*/
+    .pie-pagina .grupo-1 {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 35px 0px;
+    }
+}
 
 
-@media screen and (max-width:480px){
+
+@media screen and (max-width:480px) {
 
     /*INDEX*/
-    .hero{
+    .hero {
         width: 100%;
     }
-    .body{
+
+    .body {
         width: 100%;
+
+        .contenidoDos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenidoDos Video {
+            width: 100%;
+        }
     }
-    .contenidoDos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .contenidoDos Video{
-        width: 100%;
-    }
+
     /*PAGINA HABILIDADES*/
-    .habilidades{
-        /*.habilidad{
-        width: 100%;
-        margin: 0 0 10px 0;
-        }*/
-        .habilidad{
-            
+    .habilidades {
+        .habilidad {
             display: flex;
             flex-direction: column;
             margin: 0 0 10px 0;
@@ -174,8 +187,8 @@
     }
 
     /*GALERIA ARREGLADO 480PX*/
-        .aspectos{
-        .galeria{
+    .aspectos {
+        .galeria {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -184,71 +197,59 @@
     }
 
     /*FOOTER ARREGLADO A 480PX*/
-    .pie-pagina .grupo-1{
+    .pie-pagina .grupo-1 {
         width: 80%;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
         padding: 35px 0px;
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:320px) {
+
     /*INDEX*/
-    .hero{
+    .hero {
         width: 100%;
     }
-    .body{
+
+    .body {
         width: 100%;
+
+        .contenidoDos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenidoDos Video {
+            width: 100%;
+        }
     }
-    .contenidoDos{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .contenidoDos Video{
-        width: 100%;
-    }
+
     /*PAGINA HABILIDADES*/
-    .habilidades{
-        /*.habilidad{
-        width: 100%;
-        margin: 0 0 10px 0;}*/
-        /*.habilidad{
-            width: 100%;
+    .habilidades {
+        .habilidad {
             display: flex;
             flex-direction: column;
-            width: 100%;
-            margin: 0 0 10px 0;
-        }*/
-        .habilidad{
-            display: flex;
-            flex-direction: column;
-            
             padding: 10px;
         }
     }
 
-    
-    
-    
     /*GALERIA ARREGLADO A 320PX*/
-    
-    .aspectos{
-        .galeria{
+    .aspectos {
+        .galeria {
             display: flex;
             flex-direction: column;
             width: 100%;
             padding: 10px;
         }
     }
-    
-    
+
     /*FOOTER ARREGLADO A 320PX*/
-    .pie-pagina .grupo-1{
+    .pie-pagina .grupo-1 {
         width: 80%;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 30px;
         padding: 25px 0px;
     }
 }
-

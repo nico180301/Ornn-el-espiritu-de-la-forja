@@ -1,9 +1,7 @@
-/*PAGINA ASPECTOS*/
-/*CCS DE GALERIA DE IMAGENES 2*/
-.aspectos{
-    background-color: #160101;
-    
-    .aspe_titulo{
+.aspectos {
+    background-color: $color-third;
+
+    .aspe_titulo {
         font-family: $font-second;
         color: $color-second;
         font-size: 4.375em;
@@ -12,33 +10,31 @@
         padding-top: 6rem;
         font-style: italic;
     }
-    .galeria{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        width: 95%;
-        margin: auto;
-        grid-gap: 10px;
-        padding: 20px 0;
-        overflow: hidden;
 
-        &__ornn{
+    .galeria {
+        @include tamanio(grid, repeat(2, 1fr), 95%, auto, 10px, 20px 0, hidden);
+
+        &__ornn {
             display: block;
             position: relative;
             overflow: hidden;
             box-shadow: 0 0 6px rgba(0, 0, 0, .5);
         }
-        img{
+
+        img {
             width: 100%;
             vertical-align: top;
             height: 300px;
             object-fit: cover;
-            transition: 0.5s ;
-            &:hover{
+            transition: 0.5s;
+
+            &:hover {
                 transform: scale(1.2);
             }
         }
     }
-    .light-box{
+
+    .light-box {
         position: fixed;
         top: 30px;
         left: 0;
@@ -52,20 +48,22 @@
         align-items: center;
         transform: scale(0);
 
-        &:target{
+        &:target {
             transform: scale(1);
         }
-        img{
+
+        img {
             width: 75%;
             max-height: 80%;
         }
-        .close{
+
+        .close {
             display: block;
             position: absolute;
             top: 60px;
             right: 60px;
-            color: white;
-            background: black;
+            color: $color-second;
+            background: $color-main;
             text-decoration: none;
             width: 30px;
             height: 30px;
@@ -73,17 +71,17 @@
             line-height: 30px;
             border-radius: 50%;
         }
-        .next{
-            display: block;
-            background: black;
-            color: white;
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            text-decoration: none;
-            text-align: center;
-            border-radius: 50%;
-        }
-    }   
-}
 
+        .next {
+            display: block;
+            background: $color-main;
+            color: $color-second;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 50%;
+        }
+    }
+}

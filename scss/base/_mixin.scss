@@ -1,0 +1,9 @@
+@mixin tamanio($d, $gtc, $w, $margin, $ggap, $padding, $overflow){
+    display: $d;
+    grid-template-columns: $gtc;
+    width: $w;
+    margin: $margin;
+    grid-gap: $ggap;
+    padding: $padding;
+    overflow: $overflow;
+}
